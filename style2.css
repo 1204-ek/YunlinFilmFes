@@ -12,11 +12,19 @@
   color: whitesmoke;
 }
 
-.nav-link:active{
+.nav-link:focus{
   color: #ceb671;
 }
 
 .nav-link:hover{
+  color: #ceb671;
+}
+
+.nav-link:active{
+  color: #ceb671;
+}
+
+.nav-link::after{
   color: #ceb671;
 }
 
