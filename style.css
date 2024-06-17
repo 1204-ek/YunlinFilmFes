@@ -1,0 +1,354 @@
+@import url('file:///C:\Users\web_app\fonts');
+
+.zen-old-mincho-bold {
+  font-family: "Zen Old Mincho", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.zen-old-mincho-regular {
+  font-family: "Zen Old Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*這我的反白*/
+::selection {
+	background: #ceb671; 
+	color: #121211; 
+}
+
+.navbar{
+  background-color: rgba(0, 0, 0,0.9);
+  transition: background-color 0.3s ease-in-out;
+  padding: 20px 20px;
+  letter-spacing: .1em;
+}
+
+
+.nav-link:visited{
+  color: whitesmoke;
+}
+
+.nav-link:active{
+  color: #ceb671;
+}
+
+.nav-link:hover{
+  color: #ceb671;
+}
+
+.nav-link{
+  font-family: 'Noto Serif TC',sans-serif;
+  padding: 10px 10px;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+
+h1{
+  font-family: 'Zen Old Mincho',serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #ceb671;
+  text-align: end;
+}
+
+
+h6{
+  font-family: 'Noto Serif TC',sans-serif;
+  font-weight: 200;
+  letter-spacing: 2px;
+  font-style: normal;
+  color: whitesmoke;
+}
+
+h4{
+  font-family: 'Zen Old Mincho',serif;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  font-style: normal;
+  color: whitesmoke;
+}
+
+h5{
+  font-family: 'Zen Old Mincho',serif;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  font-style: normal;
+  color: whitesmoke;
+}
+
+body {
+  background:
+    linear-gradient(#121211, #342d18);
+}
+
+.background-image{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1; /* 设置 z-index 以确保图片在背景图像之上，但在所有其他元素之下 */
+    mix-blend-mode: multiply;
+    pointer-events: none; /* 让图片不可点击 */
+}
+
+.info-table{
+  border-color: #ceb671;
+  border-radius: 5px;
+  border-style: double;
+}
+
+.badge{
+  font-size: 2.5em;
+  letter-spacing: 3px;
+  font-family: 'Zen Old Mincho',serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #ceb671;
+  text-align: end;
+  align-self: flex-end;
+  align-items: end;
+  text-align: end;
+  background-color: transparent;
+  border-color: #ceb671;
+  border-radius: 20px;
+  border-style: double;
+  border-width: 5px;
+  width: fit-content;
+  align-items:end;
+  padding: 10px 15px;
+}
+
+
+footer {
+    position: bottom;
+    padding: 100px 100px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+      background: #000;
+      color: #fff;
+  }
+
+  .icon{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .icon2{
+    margin-right: 100px;
+  }
+
+  .footertd{
+    border-color: transparent;
+    color: transparent;
+    }
+    
+    .footertr{
+    border-color: transparent;
+    color: transparent;
+    }
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  color: whitesmoke;
+  font-family: 'Noto Serif TC',sans-serif;
+  text-align: center;
+  letter-spacing: .1em;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: color 0.2s linear;
+}
+
+.btn:hover {
+  color: black;
+  background-color: transparent;
+}
+
+.btn::before{
+  background-color: #ceb671;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  max-height: 20%;
+  z-index: -1;
+  transition: 0.5s;
+  transform-origin: 0.5 0;
+  transition-timing-function: cubic-bezier(0,5,1,6,0,4,0,7);
+}
+
+.btn1::before{
+  transform: scaleX(0);
+}
+
+.btn1:hover::before{
+  transform: scaleX(1);
+}
+
+.btn2 {
+  background-color: transparent;
+  border: none;
+  color: whitesmoke;
+  font-family: 'Noto Serif TC',sans-serif;
+  text-align: center;
+  letter-spacing: .1em;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: color 0.2s linear;
+}
+
+.btn2:hover {
+  color: black;
+  background-color: transparent;
+}
+
+.btn2::before{
+  background-color: #ceb671;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 16%;
+  width: 100%;
+  height: 100%;
+  max-height: 20%;
+  z-index: -1;
+  transition: 0.5s;
+  transform-origin: 0.5 0;
+  transition-timing-function: cubic-bezier(0,5,1,6,0,4,0,7);
+}
+
+.btn3 {
+  background-color: transparent;
+  border: none;
+  color: whitesmoke;
+  font-family: 'Noto Serif TC',sans-serif;
+  text-align: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: color 0.2s linear;
+}
+
+.btn3:hover {
+  color: black;
+  background-color: transparent;
+}
+
+.btn3::before{
+  background-color: #ceb671;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 32%;
+  width: 100%;
+  height: 100%;
+  max-height: 20%;
+  z-index: -1;
+  transition: 0.5s;
+  transform-origin: 0.5 0;
+  transition-timing-function: cubic-bezier(0,5,1,6,0,4,0,7);
+}
+
+.btn4 {
+  background-color: transparent;
+  border: none;
+  color: whitesmoke;
+  font-family: 'Noto Serif TC',sans-serif;
+  text-align: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: color 0.2s linear;
+}
+
+.btn4:hover {
+  color: black;
+  background-color: transparent;
+}
+
+.btn4::before{
+  background-color: #ceb671;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 48%;
+  width: 100%;
+  height: 100%;
+  max-height: 20%;
+  z-index: -1;
+  transition: 0.5s;
+  transform-origin: 0.5 0;
+  transition-timing-function: cubic-bezier(0,5,1,6,0,4,0,7);
+}
+
+.btn5 {
+  background-color: transparent;
+  border: none;
+  color: whitesmoke;
+  font-family: 'Noto Serif TC',sans-serif;
+  text-align: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: color 0.2s linear;
+}
+
+.btn5:hover {
+  color: black;
+  background-color: transparent;
+}
+
+.btn5::before{
+  background-color: #ceb671;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 64%;
+  width: 100%;
+  height: 100%;
+  max-height: 20%;
+  z-index: -1;
+  transition: 0.5s;
+  transform-origin: 0.5 0;
+  transition-timing-function: cubic-bezier(0,5,1,6,0,4,0,7);
+}
+
+.btn6 {
+  background-color: transparent;
+  border: none;
+  color: whitesmoke;
+  font-family: 'Noto Serif TC',sans-serif;
+  text-align: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: color 0.2s linear;
+}
+
+.btn6:hover {
+  color: black;
+  background-color: transparent;
+}
+
+.btn6::before{
+  background-color: #ceb671;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 80%;
+  width: 100%;
+  height: 100%;
+  max-height: 20%;
+  z-index: -1;
+  transition: 0.5s;
+  transform-origin: 0.5 0;
+  transition-timing-function: cubic-bezier(0,5,1,6,0,4,0,7);
+}

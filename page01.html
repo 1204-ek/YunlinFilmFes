@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>雲林影展｜影展結構</title>
+    <link href="file:///C:\Users\web_app\fonts" rel="stylesheet" />
+    <style>
+        @import url(file:///C:\Users\web_app\fonts);
+        
+        .glitter {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            background-color: #ceb671;
+            border-radius: 50%;
+            pointer-events: none;
+            opacity: 1;
+            animation: glitter 1s linear forwards; /* 延长动画时间 */
+            mix-blend-mode: screen;
+        }
+
+        @keyframes glitter {
+            0% {
+                transform: translateY(0) scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(50px) scale(0.5); /* 模拟下落和缩小 */
+                opacity: 0;
+            }
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link href="file:///C:\Users\web_app\style1.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body link="whitesmoke" alink="#ceb671" vlink="#ceb671" >
+    <img src="file:///C:\Users\web_app\img\BG.png" alt="BG" class="background-image">
+    <script>
+        document.addEventListener('mousemove', function(e) {
+        for (let i = 0; i < 15; i++) { // 每次创建5个粒子
+            const glitter = document.createElement('div');
+            glitter.className = 'glitter';
+            // 随机偏移量
+            const offsetX = (Math.random() - 0.5) * 15;
+            const offsetY = (Math.random() - 0.5) * 15;
+            glitter.style.left = `${e.pageX + offsetX - 2.5}px`;
+            glitter.style.top = `${e.pageY + offsetY - 2.5}px`;
+
+            // 监听动画结束事件，确保粒子在动画结束后被移除
+            glitter.addEventListener('animationend', () => {
+                glitter.remove();
+            });
+
+            document.body.appendChild(glitter);
+        }
+    });
+</script>
+
+
+
+    <nav class="navbar d-flex navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="file:///C:/Users/web_app/index.html">
+                <img src="file:///C:\Users\web_app\img\LOGO.png" alt="LOGO" width="120" height="32" class="d-inline-block align-text-center">
+            </a>
+            <li class="nav-item dropdown d-flex align-items-center">
+                <a class="nav-link dropdown-toggle" href="file:///C:\Users\web_app\page01.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    影展結構
+                  </a>
+                  <ul class="dropdown-menu  bg-black" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item btn btn1" href="file:///C:\Users\web_app\page01.html">關於雲獎</a></li>
+                    <li><a class="dropdown-item btn2 btn1" href="file:///C:\Users\web_app\page01.html#yunfes">雲林影展</a></li>
+                    <li><a class="dropdown-item btn3 btn1" href="file:///C:\Users\web_app\page01.html#anicontest">技專校院電腦動畫競賽</a></li>
+                    <li><a class="dropdown-item btn4 btn1" href="file:///C:\Users\web_app\page01.html#DMDfes">媒語祭</a></li>
+                    <li><a class="dropdown-item btn5 btn1" href="file:///C:\Users\web_app\page01.html#award">頒獎形式</a></li>
+                    <li><a class="dropdown-item btn6 btn1" href="file:///C:\Users\web_app\page01.html#visions">未來展望</a></li>
+                  </ul>
+            </li>
+            <li class="nav-item d-flex align-items-center">
+                <a class="nav-link" href="file:///C:\Users\web_app\page02.html">工作流程</a>
+            </li>
+            <li class="nav-item d-flex align-items-center">
+                <a class="nav-link" href="file:///C:\Users\web_app\page03.html">關於團隊</a>
+            </li>
+        </div>
+    </nav>
+    <br>
+
+<!--關於雲獎-->
+    <br>
+    <br>
+    <div class="container d-flex">
+        <div class="row">
+            <div class="col">
+                <h1 class="badge text-wrap"><b>關於雲獎</b></h1>
+                <br>
+                <br>
+                <h4 class="text-break text-start" style="color: whitesmoke;">
+                    雲林影展除了本身以外也一同合辦了「技專校院電腦動畫競賽」與「媒語祭」等關於數位媒體類型的作品，以下為各個展覽的面向與簡介。
+                </h4>
+                <br>
+                <h4 class="text-break text-start" style="color: whitesmoke;">
+                    點撃下方獎項名稱即可觀看介紹。
+                </h4>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container justify-content-center">
+        <div class="row align-items-center">
+            <table class="align-middle intro-table justify-content-center">
+                    <!--雲林影展-->
+                
+                <tr>
+                    <td colspan="1" class="text-center">
+                <p>
+                    <button id="yunfes" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample1" aria-expanded="false" aria-controls="collapseWidthExample1" class="introbtn glow-on-hover">
+                      <h2 class="text-center"><b>雲林影展</b></h2>
+                    </button>
+                </p>
+                    </td>
+                    <td colspan="1">
+                        <div style=" min-height: 120px;">
+                            <div class="collapse collapse-horizontal" id="collapseWidthExample1">
+                                <div style="width: 500px;">
+                                    <br>
+                                    <h5 class="text-break">翁漢騰老師主持，主要面向國小至高中的客群，由主辦邀請，並讓各個相關老師自由報名，最終會依照不同學年層進行頒獎語展演。</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr><td><h2 class="text-center introbtn2">｜</h2></td></tr>
+
+                    <!--技專校院電腦動畫競賽-->
+                <tr>
+                    <td colspan="1" class="text-center">
+                <p>
+                    <button id="anicontest" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample2" aria-expanded="false" aria-controls="collapseWidthExample2" class="introbtn glow-on-hover">
+                    <h3 class="text-center"><b>技專校院</b></h2>
+                    <h3 class="text-center text-wrap"><b>  電腦動畫競賽  </b></h2>
+                    </button>
+                </p>
+                    </td>
+                    <td colspan="1">
+                        <div style=" min-height: 120px;">
+                            <div class="collapse collapse-horizontal" id="collapseWidthExample2">
+                                <div style="width: 500px;">
+                                    <h5 class="text-break">劉景程老師主持，收集各地完成度高的動畫專題作品，並挑選優秀作品以輔導、補助參加海外競賽。
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr><td><h2 class="text-center introbtn2">｜</h2></td></tr>
+                
+                    <!--媒語祭-->
+                    <tr>
+                        <td colspan="1" class="text-center">
+                    <p>
+                        <button id="DMDfes" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample3" aria-expanded="false" aria-controls="collapseWidthExample3" class="introbtn glow-on-hover">
+                        <h2 class="text-center"><b>媒語祭</b></h2>
+                        </button>
+                    </p>
+                        </td>
+                        <td colspan="1">
+                            <div style=" min-height: 120px;">
+                                <div class="collapse collapse-horizontal" id="collapseWidthExample3">
+                                    <div style="width: 500px;">
+                                        <h5 class="text-break">由雲科數媒系學會主持，是每學年舉辦一次期末成果展，會邀請系上老師參與課程展示，旨在為系上學生樹立課程作品的模範，並向校外宣傳學生作品。</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr> 
+            </table>
+        </div>
+    </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <!--現場照片-->
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col">
+                <h1 class="badge text-wrap align-content-center text-center"><b>現場照片</b></h1> 
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div id="carouselExampleIndicators" class="carousel slide align-content-center text-center" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="file:///C:\Users\web_app\img\fes001.jpg" class="d-block w-100" alt="fes001">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="file:///C:\Users\web_app\img\fes002.jpg" class="d-block w-100" alt="fes002">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="file:///C:\Users\web_app\img\fes003.jpg" class="d-block w-100" alt="fes003">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="file:///C:\Users\web_app\img\fes004.jpg" class="d-block w-100" alt="fes004">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="file:///C:\Users\web_app\img\fes005.jpg" class="d-block w-100" alt="fes005">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <!--未來展望-->
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col">
+                <h1 class="badge text-wrap align-content-center text-center"><b>未來展望</b></h1> 
+                <br>
+                <br>
+                <h4 class="text-break text-start" style="color: whitesmoke;">
+                    我們希望將雲林打造成台灣的動畫重鎮，推動雲林動畫產業的蓬勃發展，使「雲林影展」成為台灣重要的影視交流平台，並成為國際知名的動畫電影節。
+                </h4>
+                <br>
+                <h4 class="text-break text-start" style="color: whitesmoke;">
+                    同時，我們也致力於傳承「媒語祭」這一重要活動，使其成為雲科大數媒系每學年結束時的傳統盛事。通過這個活動，新入學的數媒系學生不僅能更深入了解系上的課程，為選課提供參考，還能激發他們製作課堂作業的熱情，促進創作與學習的熱忱。
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <br>   
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>    
+    <br>
+
+    <footer class="bg-black">
+        <div class="container-fluid">
+            <table class="table table-bordered align-middle text-center">
+                <tr class="footertr">
+                <td class="align-middle text-start footertd" rowspan="3"><img src="file:///C:\Users\web_app\img\LOGO2.png" width="120" height="80" class="icon2" alt=""></td>
+                <td class="align-middle text-start footertd"><h6>主辦｜翁漢騰 老師</h6></td>
+                <td class="align-middle text-start footertd"><h6>地址｜雲林縣斗六市大學路三段123號</h6></td>
+                </tr>
+
+                <tr class="footertr">
+                <td class="align-middle text-start footertd"><h6>協辦｜劉景程 老師</h6></td>
+                <td class="align-middle text-start footertd"><h6>信箱｜yunlin.filmfestival@gmail.com</h6></td>
+                </tr>
+
+                <tr class="footertr">
+                <td class="align-middle text-start footertd"><h6>執行｜國立雲林科技大學 數位媒體設計系系學會</h6></td>
+                <td class="align-middle text-start footertd"></td>
+                </tr>
+                
+                <tr class="footertr">
+                    <td class="align-middle text-start footertd"></td>
+                    <td class="align-middle text-start footertd"></td>
+                    <td class="align-middle text-end footertd">
+                        <a href="https://www.facebook.com/YunlinStudentsFilmFestival" target="_blank" rel="noopener noreferrer"><img src="file:///C:\Users\web_app\img\FB.png" width="25" height="25" class="icon" alt="FB"></a>
+                        <a href=""></a><img src="file:///C:\Users\web_app\img\YT.png" width="25" height="25" class="icon" alt="YT"></a>
+                        <a href="https://www.instagram.com/yunlin.student.film.festival" target="_blank" rel="noopener noreferrer"><img src="file:///C:\Users\web_app\img\IG.png" width="25" height="25" class="icon" alt="IG"></a>
+                    </td>
+                </tr>    
+                
+            </table>
+        </div>
+   </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
