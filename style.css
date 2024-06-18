@@ -17,8 +17,12 @@
   font-style: normal;
   color: #ceb671;
   z-index: 2000;
+  transition: opacity 1s ease-out;
 }
 
+.loader.fade-out {
+  opacity: 0;
+}
 
 .loading-animation{
   width: 10%;

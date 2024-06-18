@@ -41,16 +41,23 @@
 
 <body link="whitesmoke" alink="#ceb671" vlink="#ceb671" >
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+    // script.js
+    document.addEventListener("DOMContentLoaded", function() {
     // 模擬加載過程
     setTimeout(function() {
-        // 移除loading頁面
+        // 添加漸出效果
         var loadingElement = document.getElementById("loading");
-        loadingElement.parentNode.removeChild(loadingElement);
+        loadingElement.classList.add("fade-out");
+
+        // 在漸出效果結束後移除loading元素
+        loadingElement.addEventListener("transitionend", function() {
+            loadingElement.parentNode.removeChild(loadingElement);
+        });
+
         // 顯示主要內容
         document.getElementById("content").style.display = "block";
     }, 3000); // 3秒鐘的延遲，用於模擬加載
-    });
+});
     </script>
 
     <div id="loading" class="loader">
