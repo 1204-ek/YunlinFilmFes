@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/PAGE_LOGO.ico">
     <title>雲林影展｜首頁</title>
     <link href="fonts" rel="stylesheet" />
     <style>
@@ -56,10 +57,11 @@
 
         // 顯示主要內容
         document.getElementById("content").style.display = "block";
-    }, 1000); // 1秒鐘的延遲，用於模擬加載
+    }, 1000); // 3秒鐘的延遲，用於模擬加載
 });
     </script>
 
+    <!--loading頁-->
     <div id="loading" class="loader">
         <img src="img/LOGO2.svg" class="loading-animation">
     </div>
@@ -67,12 +69,12 @@
     <img src="img\BG.webp" alt="BG" class="background-image">
     <script>
             document.addEventListener('mousemove', function(e) {
-            for (let i = 0; i < 15; i++) { // 每次创建5个粒子
+            for (let i = 0; i < 30; i++) { // 每次创建5个粒子
                 const glitter = document.createElement('div');
                 glitter.className = 'glitter';
                 // 随机偏移量
-                const offsetX = (Math.random() - 0.5) * 15;
-                const offsetY = (Math.random() - 0.5) * 15;
+                const offsetX = (Math.random() - 0.5) * 25;
+                const offsetY = (Math.random() - 0.5) * 25;
                 glitter.style.left = `${e.pageX + offsetX - 2.5}px`;
                 glitter.style.top = `${e.pageY + offsetY - 2.5}px`;
 
@@ -86,6 +88,26 @@
         });
     </script>
 
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    var TopBtnButton = document.getElementById("top-btn");
+
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > 100) { // 當滾動超過100px時顯示按鈕
+            TopBtnButton.classList.add("show");
+        } else {
+            TopBtnButton.classList.remove("show");
+        }
+    });
+
+    TopBtnButton.addEventListener("click", function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // 平滑滾動回到頂部
+        });
+    });
+});
+    </script>
 
 
     <nav class="navbar d-flex navbar-expand-lg sticky-top ">
@@ -156,6 +178,7 @@
     </div>
 </div>
 
+<button id="top-btn" class="topbtn"><a href="#"><img src="img/ARROW.svg" class="topbtn"></a></button>
     <br>
     <br>
     <br>
