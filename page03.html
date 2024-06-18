@@ -8,7 +8,8 @@
     <title>雲林影展｜關於團隊</title>
     <link href="fonts" rel="stylesheet" />
     <style>
-        @import url("fonts"); 
+        @import url(fonts);
+        
         .glitter {
             position: absolute;
             width: 1px;
@@ -38,7 +39,24 @@
 </head>
 
 <body link="whitesmoke" alink="#ceb671" vlink="#ceb671" >
-    <img src="img\BG.png" alt="BG" class="background-image">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    // 模擬加載過程
+    setTimeout(function() {
+        // 移除loading頁面
+        var loadingElement = document.getElementById("loading");
+        loadingElement.parentNode.removeChild(loadingElement);
+        // 顯示主要內容
+        document.getElementById("content").style.display = "block";
+    }, 3000); // 3秒鐘的延遲，用於模擬加載
+    });
+    </script>
+
+    <div id="loading" class="loader">
+        <img src="img/LOGO2.svg" class="loading-animation">
+    </div>
+
+    <img src="img\BG.webp" alt="BG" class="background-image">
     <script>
         document.addEventListener('mousemove', function(e) {
         for (let i = 0; i < 15; i++) { // 每次创建5个粒子
@@ -63,7 +81,7 @@
     <nav class="navbar d-flex navbar-expand-lg navbar-dark bg-black ">
         <div class="container-fluid">
             <a class="navbar-brand " href="index.html">
-                <img src="img\LOGO.png" alt="LOGO" width="120" height="32" class="d-inline-block align-text-center">
+                <img src="img\LOGO.svg" alt="LOGO" width="120" height="32" class="d-inline-block align-text-center">
             </a>
             <li class="nav-item dropdown d-flex align-items-center">
                 <a class="nav-link dropdown-toggle" href="page01.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -74,7 +92,7 @@
                     <li><a class="dropdown-item btn2 btn1" href="page01.html#yunfes">雲林影展</a></li>
                     <li><a class="dropdown-item btn3 btn1" href="page01.html#anicontest">技專校院電腦動畫競賽</a></li>
                     <li><a class="dropdown-item btn4 btn1" href="page01.html#DMDfes">媒語祭</a></li>
-                    <li><a class="dropdown-item btn5 btn1" href="page01.html#award">頒獎形式</a></li>
+                    <li><a class="dropdown-item btn5 btn1" href="page01.html#photos">現場照片</a></li>
                     <li><a class="dropdown-item btn6 btn1" href="page01.html#visions">未來展望</a></li>
                   </ul>
             </li>
@@ -103,8 +121,8 @@
             <td><h3>協辦人</h3></td>
         </tr>
         <tr class="circle-tr">
-            <td><img src="img\0001.jpg" class="rounded-circle circle-size"></td>
-            <td><img src="img\0002.jpg" class="rounded-circle circle-size"></td>
+            <td><img src="img\0001.webp" class="rounded-circle circle-size"></td>
+            <td><img src="img\0002.webp" class="rounded-circle circle-size"></td>
         </tr>
     </table>
 </div>
@@ -113,8 +131,8 @@
 <div class="container-fluid">
     <table class="table table-bordered align-middle text-center">
         <tr class="circle-tr">
-            <td class="text-end"><img src="img\0003.jpg" class="rounded-circle circle-size2"></td>
-            <td class="text-start"><img src="img\0004.jpg" class="rounded-circle circle-size2"></td>
+            <td class="text-end"><img src="img\0003.webp" class="rounded-circle circle-size2"></td>
+            <td class="text-start"><img src="img\0004.webp" class="rounded-circle circle-size2"></td>
         </tr>
     </table>
 </div>
@@ -126,11 +144,11 @@
             <td class="circle-td"><h3>展場組</h3></td>
         </tr>
         <tr class="circle-tr">
-            <td class="circle-td col-7"><img src="img\0005.jpg" class="rounded-circle circle-size3">
-                <img src="img\0006.jpg" class="rounded-circle circle-size3">
-                <img src="img\0007.jpg" class="rounded-circle circle-size3">
+            <td class="circle-td col-7"><img src="img\0005.webp" class="rounded-circle circle-size3">
+                <img src="img\0006.webp" class="rounded-circle circle-size3">
+                <img src="img\0007.webp" class="rounded-circle circle-size3">
             </td>
-            <td class="circle-td"><img src="img\0008.jpg" class="rounded-circle circle-size3 text-start"></td>
+            <td class="circle-td"><img src="img\0008.webp" class="rounded-circle circle-size3 text-start"></td>
         </tr>
     </table>
 </div>
@@ -141,10 +159,10 @@
             <td class="circle-td"><h3>影視組</h3></td>
         </tr>
         <tr class="circle-tr">
-            <td class="circle-td"><img src="img\0009.jpg" class="rounded-circle circle-size3">
-                <img src="img\0010.jpg" class="rounded-circle circle-size3">
-                <img src="img\0011.jpg" class="rounded-circle circle-size3">
-                <img src="img\0012.jpg" class="rounded-circle circle-size3"></td>
+            <td class="circle-td"><img src="img\0009.webp" class="rounded-circle circle-size3">
+                <img src="img\0010.webp" class="rounded-circle circle-size3">
+                <img src="img\0011.webp" class="rounded-circle circle-size3">
+                <img src="img\0012.webp" class="rounded-circle circle-size3"></td>
         </tr>
     </table>
 </div>
@@ -154,8 +172,8 @@
             <td class="circle-td"><h3>活動組</h3></td>
         </tr>
         <tr class="circle-tr">
-            <td class="circle-td"><img src="img\0013.jpg" class="rounded-circle circle-size3">
-                <img src="img\0014.jpg" class="rounded-circle circle-size3"></td>
+            <td class="circle-td"><img src="img\0013.webp" class="rounded-circle circle-size3">
+                <img src="img\0014.webp" class="rounded-circle circle-size3"></td>
         </tr>
     </table>
 </div>
@@ -173,7 +191,7 @@
     <div class="container-fluid">
         <table class="table table-bordered align-middle text-center">
             <tr class="footertr">
-            <td class="align-middle text-start footertd" rowspan="3"><img src="img\LOGO2.png" width="120" height="80" class="icon2" alt=""></td>
+            <td class="align-middle text-start footertd" rowspan="3"><img src="img\LOGO2.svg" width="120" height="80" class="icon2" alt=""></td>
             <td class="align-middle text-start footertd"><h6>主辦｜翁漢騰 老師</h6></td>
             <td class="align-middle text-start footertd"><h6>地址｜雲林縣斗六市大學路三段123號</h6></td>
             </tr>
@@ -192,9 +210,9 @@
                 <td class="align-middle text-start footertd"></td>
                 <td class="align-middle text-start footertd"></td>
                 <td class="align-middle text-end footertd">
-                    <a href="https://www.facebook.com/YunlinStudentsFilmFestival" target="_blank" rel="noopener noreferrer"><img src="img\FB.png" width="25" height="25" class="icon" alt="FB"></a>
-                    <a href=""></a><img src="img\YT.png" width="25" height="25" class="icon" alt="YT"></a>
-                    <a href="https://www.instagram.com/yunlin.student.film.festival" target="_blank" rel="noopener noreferrer"><img src="file:///img\IG.png" width="25" height="25" class="icon" alt="IG"></a>
+                    <a href="https://www.facebook.com/YunlinStudentsFilmFestival" target="_blank" rel="noopener noreferrer"><img src="img\FB.svg" width="25" height="25" class="icon" alt="FB"></a>
+                    <a href=""></a><img src="img\YT.svg" width="25" height="25" class="icon" alt="YT"></a>
+                    <a href="https://www.instagram.com/yunlin.student.film.festival" target="_blank" rel="noopener noreferrer"><img src="img\IG.svg" width="25" height="25" class="icon" alt="IG"></a>
                 </td>
             </tr>    
             

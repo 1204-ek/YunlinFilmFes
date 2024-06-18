@@ -9,6 +9,7 @@
     <link href="fonts" rel="stylesheet" />
     <style>
         @import url(fonts);
+        
         .glitter {
             position: absolute;
             width: 1px;
@@ -38,7 +39,25 @@
 </head>
 
 <body link="whitesmoke" alink="#ceb671" vlink="#ceb671" >
-    <img src="img\BG.png" alt="BG" class="background-image">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    // 模擬加載過程
+    setTimeout(function() {
+        // 移除loading頁面
+        var loadingElement = document.getElementById("loading");
+        loadingElement.parentNode.removeChild(loadingElement);
+        // 顯示主要內容
+        document.getElementById("content").style.display = "block";
+    }, 3000); // 3秒鐘的延遲，用於模擬加載
+    });
+    </script>
+
+    <div id="loading" class="loader">
+        <img src="img/LOGO2.svg" class="loading-animation">
+    </div>
+
+    <img src="img\BG.webp" alt="BG" class="background-image">
     <script>
         document.addEventListener('mousemove', function(e) {
         for (let i = 0; i < 15; i++) { // 每次创建5个粒子
@@ -56,13 +75,16 @@
             });
 
             document.body.appendChild(glitter);
-            }
-        });
-    </script>
-    <nav class="navbar d-flex navbar-expand-lg navbar-dark bg-black sticky-top">
+        }
+    });
+</script>
+
+
+
+    <nav class="navbar d-flex navbar-expand-lg sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand " href="index.html">
-                <img src="img\LOGO.png" alt="LOGO" width="120" height="32" class="d-inline-block align-text-center">
+                <img src="img\LOGO.svg" alt="LOGO" width="120" height="32" class="d-inline-block align-text-center">
             </a>
             <li class="nav-item dropdown d-flex align-items-center">
                 <a class="nav-link dropdown-toggle" href="page01.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -73,7 +95,7 @@
                     <li><a class="dropdown-item btn2 btn1" href="page01.html#yunfes">雲林影展</a></li>
                     <li><a class="dropdown-item btn3 btn1" href="page01.html#anicontest">技專校院電腦動畫競賽</a></li>
                     <li><a class="dropdown-item btn4 btn1" href="page01.html#DMDfes">媒語祭</a></li>
-                    <li><a class="dropdown-item btn5 btn1" href="page01.html#award">頒獎形式</a></li>
+                    <li><a class="dropdown-item btn5 btn1" href="page01.html#photos">現場照片</a></li>
                     <li><a class="dropdown-item btn6 btn1" href="page01.html#visions">未來展望</a></li>
                   </ul>
             </li>
@@ -187,7 +209,7 @@
     <div class="container-fluid">
         <table class="table table-bordered align-middle text-center">
             <tr class="footertr">
-            <td class="align-middle text-start footertd" rowspan="3"><img src="img\LOGO2.png" width="120" height="80" class="icon2" alt=""></td>
+            <td class="align-middle text-start footertd" rowspan="3"><img src="img\LOGO2.svg" width="120" height="80" class="icon2" alt=""></td>
             <td class="align-middle text-start footertd"><h6>主辦｜翁漢騰 老師</h6></td>
             <td class="align-middle text-start footertd"><h6>地址｜雲林縣斗六市大學路三段123號</h6></td>
             </tr>
@@ -206,9 +228,9 @@
                 <td class="align-middle text-start footertd"></td>
                 <td class="align-middle text-start footertd"></td>
                 <td class="align-middle text-end footertd">
-                    <a href="https://www.facebook.com/YunlinStudentsFilmFestival" target="_blank" rel="noopener noreferrer"><img src="img\FB.png" width="25" height="25" class="icon" alt="FB"></a>
-                    <a href=""></a><img src="img\YT.png" width="25" height="25" class="icon" alt="YT"></a>
-                    <a href="https://www.instagram.com/yunlin.student.film.festival" target="_blank" rel="noopener noreferrer"><img src="img\IG.png" width="25" height="25" class="icon" alt="IG"></a>
+                    <a href="https://www.facebook.com/YunlinStudentsFilmFestival" target="_blank" rel="noopener noreferrer"><img src="img\FB.svg" width="25" height="25" class="icon" alt="FB"></a>
+                    <a href=""></a><img src="img\YT.svg" width="25" height="25" class="icon" alt="YT"></a>
+                    <a href="https://www.instagram.com/yunlin.student.film.festival" target="_blank" rel="noopener noreferrer"><img src="img\IG.svg" width="25" height="25" class="icon" alt="IG"></a>
                 </td>
             </tr>    
             

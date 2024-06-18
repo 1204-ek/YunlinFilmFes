@@ -1,5 +1,43 @@
 @import url('fonts');
 
+.loader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background:linear-gradient(#121211, #342d18);
+  font-family: 'Zen Old Mincho Black',serif;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  font-style: normal;
+  color: #ceb671;
+  z-index: 2000;
+}
+
+
+.loading-animation{
+  width: 10%;
+  height: auto;
+  animation: loading-animation 1.5s ease-in-out infinite;
+}
+
+@keyframes loading-animation {
+  0% {
+    opacity: 0;
+    transform: none;
+  }
+  50% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
 .zen-old-mincho-bold {
   font-family: "Zen Old Mincho", serif;
   font-weight: 700;
@@ -19,8 +57,7 @@
 }
 
 .navbar{
-  background-color: rgba(0, 0, 0,0.9);
-  transition: background-color 0.3s ease-in-out;
+  background-color: rgba(0, 0, 0,0.8);
   padding: 20px 20px;
   letter-spacing: .1em;
 }
@@ -45,6 +82,7 @@
 .nav-link::after{
   color: #ceb671;
 }
+
 
 .nav-link{
   font-family: 'Noto Serif TC',sans-serif;
