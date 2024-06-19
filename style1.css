@@ -93,6 +93,17 @@
   cursor: pointer;
 }
 
+.offcanvas{
+  width: 100vw !important;
+  height: 100vh !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 /*這我的反白顏色*/
 ::selection {
 	background: #ceb671; 
@@ -189,15 +200,40 @@ body {
 }
 
 
-footer {
+footer{
   position: bottom;
-  padding: 100px 100px;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-    background: #000;
-    color: #fff;
 }
+
+  .footer-big {
+    position: bottom;
+    padding: 100px 100px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+      background: #000;
+      color: #fff;
+  }
+
+  .footer-md-block{
+    position: bottom;
+    padding: 50px 50px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+      background: #000;
+      color: #fff;
+  }
+
+  .footer-md-none{
+    position: bottom;
+    padding: 20px 20px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+      background: #000;
+      color: #fff;
+  }
+
 
 .icon{
   margin-left: 10px;
@@ -389,6 +425,27 @@ button {
   transition: 0.5s;
   transform-origin: 0.5 0;
   transition-timing-function: cubic-bezier(0,5,1,6,0,4,0,7);
+}
+
+.btn-toggler {
+  background-color: transparent;
+  border: none;
+  color: whitesmoke;
+  font-family: 'Noto Serif TC',sans-serif;
+  text-align: center;
+  letter-spacing: .1em;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn-toggler:hover{
+  color: black;
+  background-color: #ceb671;
+}
+
+.btn:hover {
+  color: black;
+  background-color: transparent;
 }
 
 .btn1::before{

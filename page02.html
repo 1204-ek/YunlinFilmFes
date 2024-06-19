@@ -110,7 +110,54 @@
 
 
 
-    <nav class="navbar d-flex navbar-expand-lg sticky-top">
+    <!--在md以下顯示的navbar-->
+    <nav class="navbar d-flex fixed-top d-block d-md-none">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="index.html">
+                <img src="img\LOGO.svg" alt="LOGO" width="100px" height="auto" class="d-inline-block align-text-center">
+            </a>
+          <button class="navbar-toggler text-end" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <img src="img/toggler.svg" width="25" height="auto" class="text-end">
+          </button>
+          <div class="offcanvas offcanvas-end bg-black" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header bg-black">
+              <button type="button" data-bs-dismiss="offcanvas" aria-label="Close" class="text-end">
+                <img src="img/close.svg" width="20" height="auto" class="text-end">
+              </button>
+            </div>
+            <div class="offcanvas-body bg-black">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">回到首頁</a>
+                </li>
+                <li class="nav-item dropdown align-items-center">
+                    <a class="nav-link dropdown-toggle" href="page01.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        影展結構
+                  </a>
+                  <ul class="dropdown-menu bg-black" aria-labelledby="offcanvasNavbarDropdown">
+                    <li><a class="dropdown-item btn-toggler" href="page01.html">關於雲獎</a></li>
+                    <li><a class="dropdown-item btn-toggler" href="page01.html#yunfes">雲林影展</a></li>
+                    <li><a class="dropdown-item btn-toggler" href="page01.html#anicontest">技專校院電腦動畫競賽</a></li>
+                    <li><a class="dropdown-item btn-toggler" href="page01.html#DMDfes">媒語祭</a></li>
+                    <li><a class="dropdown-item btn-toggler" href="page01.html#photos">現場照片</a></li>
+                    <li><a class="dropdown-item btn-toggler" href="page01.html#visions">未來展望</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item d-flex align-items-center">
+                    <a class="nav-link" href="page02.html">工作流程</a>
+                </li>
+                <li class="nav-item d-flex align-items-center">
+                    <a class="nav-link" href="page03.html">關於團隊</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </nav>
+
+
+    <!--在md以上顯示的navbar-->
+    <nav class="navbar d-flex navbar-expand-lg sticky-top d-md-block d-none">
         <div class="container-fluid">
             <a class="navbar-brand " href="index.html">
                 <img src="img\LOGO.svg" alt="LOGO" width="120" height="32" class="d-inline-block align-text-center">
@@ -236,7 +283,7 @@
 <br>
 <br>
 
-<footer class="bg-black">
+<footer class="bg-black d-lg-block d-none footer-big">
     <div class="container-fluid">
         <table class="table table-bordered align-middle text-center">
             <tr class="footertr">
@@ -267,6 +314,40 @@
             
         </table>
     </div>
+</footer>
+
+<footer class="bg-black d-none d-md-block d-lg-none footer-md-block">
+<div class="container-fluid">
+    <table class="table table-bordered align-middle text-center">
+        <tr class="footertr">
+        <td class="align-middle text-start footertd"><img src="img\LOGO2.svg" width="120" height="80" class="icon2" alt=""></td>
+        <td class="align-middle  footertd">
+            <a href="https://www.facebook.com/YunlinStudentsFilmFestival" target="_blank" rel="noopener noreferrer"><img src="img\FB.svg" width="25" height="25" class="icon" alt="FB"></a>
+            <a href=""></a><img src="img\YT.svg" width="25" height="25" class="icon" alt="YT"></a>
+            <a href="https://www.instagram.com/yunlin.student.film.festival" target="_blank" rel="noopener noreferrer"><img src="img\IG.svg" width="25" height="25" class="icon" alt="IG"></a>
+        </td>
+        </tr>       
+    </table>
+</div>
+</footer>
+
+<footer class="bg-black d-block d-md-none footer-md-none">
+<div class="container-fluid">
+    <table class="table table-bordered align-middle">
+        <tr class="footertr">
+        <td class="align-middle footertd"><img src="img\LOGO2.svg" width="80" height="50" alt=""></td>
+        <td class="align-middle  footertd">
+            <a href="https://www.facebook.com/YunlinStudentsFilmFestival" target="_blank" rel="noopener noreferrer"><img src="img\FB.svg" width="25" height="25" alt="FB"></a>  
+        </td>
+        <td class="align-middle  footertd">
+            <a href=""></a><img src="img\YT.svg" width="25" height="25" alt="YT"></a>
+        </td>
+        <td class="align-middle  footertd">
+            <a href="https://www.instagram.com/yunlin.student.film.festival" target="_blank" rel="noopener noreferrer"><img src="img\IG.svg" width="25" height="25" alt="IG"></a>
+        </td>
+        </tr>       
+    </table>
+</div>
 </footer>
 
 
