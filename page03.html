@@ -65,6 +65,28 @@
 });
     </script>
 
+    <!--回到頂部按鈕-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        var TopBtnButton = document.getElementById("top-btn");
+    
+        window.addEventListener("scroll", function() {
+            if (window.scrollY > 100) { // 當滾動超過100px時顯示按鈕
+                TopBtnButton.classList.add("show");
+            } else {
+                TopBtnButton.classList.remove("show");
+            }
+        });
+    
+        TopBtnButton.addEventListener("click", function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // 平滑滾動回到頂部
+            });
+        });
+    });
+        </script>
+
     <!--loading頁-->
     <div id="loading" class="loader">
         <img src="img/LOGO2.svg" class="loading-animation">
@@ -297,6 +319,7 @@
     </table>
 </div>
 
+<!--回到頂部按鈕-->
 <button id="top-btn" class="topbtn"><a href="#"><img src="img/ARROW.svg" class="topbtn"></a></button>
 <br>
 <br>
@@ -306,6 +329,7 @@
 <br>
 <br>
 
+<!--lg以上footer-->
 <footer class="bg-black d-lg-block d-none footer-big">
     <div class="container-fluid">
         <table class="table table-bordered align-middle text-center">
@@ -338,7 +362,7 @@
         </table>
     </div>
 </footer>
-
+<!--md-footer-->
 <footer class="bg-black d-none d-md-block d-lg-none footer-md-block">
 <div class="container-fluid">
     <table class="table table-bordered align-middle text-center">
@@ -353,7 +377,7 @@
     </table>
 </div>
 </footer>
-
+<!--md以下footer-->
 <footer class="bg-black d-block d-md-none footer-md-none">
 <div class="container-fluid">
     <table class="table table-bordered align-middle">
@@ -372,6 +396,7 @@
     </table>
 </div>
 </footer>
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
