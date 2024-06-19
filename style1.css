@@ -146,6 +146,10 @@ body {
   padding: 10px 15px;
 }
 
+.collapse-style{
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 .carousel-indicators [data-bs-target] {
   width: 15px;
