@@ -347,6 +347,23 @@ button {
   transform: translate(-100% -100%) !important;
 }
 
+.btn-toggler {
+  background-color: transparent;
+  border: none;
+  color: whitesmoke;
+  font-family: "Noto Serif TC", serif;
+  text-align: center;
+  letter-spacing: .1em;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn-toggler:hover{
+  color: black;
+  background-color: #ceb671;
+}
+
+
 .btn {
     background-color: transparent;
     border: none;
@@ -376,24 +393,9 @@ button {
     z-index: -1;
     transition: 0.5s;
     transform-origin: 0.5 0;
-    transition-timing-function: cubic-bezier(0,5,1,6,0,4,0,7);
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
   }
   
-  .btn-toggler {
-    background-color: transparent;
-    border: none;
-    color: whitesmoke;
-    font-family: "Noto Serif TC", serif;
-    text-align: center;
-    letter-spacing: .1em;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-  
-  .btn-toggler:hover{
-    color: black;
-    background-color: #ceb671;
-  }
   
   .btn:hover {
     color: black;
@@ -437,7 +439,7 @@ button {
     z-index: -1;
     transition: 0.5s;
     transform-origin: 0.5 0;
-    transition-timing-function: cubic-bezier(0,5,1,6,0,4,0,7);
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
   }
   
   .btn3 {
@@ -468,7 +470,7 @@ button {
     z-index: -1;
     transition: 0.5s;
     transform-origin: 0.5 0;
-    transition-timing-function: cubic-bezier(0,5,1,6,0,4,0,7);
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
   }
   
   .btn4 {
@@ -499,7 +501,7 @@ button {
     z-index: -1;
     transition: 0.5s;
     transform-origin: 0.5 0;
-    transition-timing-function: cubic-bezier(0,5,1,6,0,4,0,7);
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
   }
   
   .btn5 {
@@ -530,7 +532,7 @@ button {
     z-index: -1;
     transition: 0.5s;
     transform-origin: 0.5 0;
-    transition-timing-function: cubic-bezier(0,5,1,6,0,4,0,7);
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
   }
   
   .btn6 {
@@ -561,5 +563,5 @@ button {
     z-index: -1;
     transition: 0.5s;
     transform-origin: 0.5 0;
-    transition-timing-function: cubic-bezier(0,5,1,6,0,4,0,7);
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
   }

@@ -356,7 +356,7 @@ button {
   z-index: -1;
   transition: 0.5s;
   transform-origin: 0.5 0;
-  transition-timing-function: cubic-bezier(0,5,1,6,0,4,0,7);
+  transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
 }
 
 .btn1::before{
@@ -396,7 +396,7 @@ button {
   z-index: -1;
   transition: 0.5s;
   transform-origin: 0.5 0;
-  transition-timing-function: cubic-bezier(0,5,1,6,0,4,0,7);
+  transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
 }
 
 .btn3 {
@@ -427,7 +427,7 @@ button {
   z-index: -1;
   transition: 0.5s;
   transform-origin: 0.5 0;
-  transition-timing-function: cubic-bezier(0,5,1,6,0,4,0,7);
+  transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
 }
 
 .btn4 {
@@ -458,7 +458,7 @@ button {
   z-index: -1;
   transition: 0.5s;
   transform-origin: 0.5 0;
-  transition-timing-function: cubic-bezier(0,5,1,6,0,4,0,7);
+  transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
 }
 
 .btn5 {
@@ -489,7 +489,7 @@ button {
   z-index: -1;
   transition: 0.5s;
   transform-origin: 0.5 0;
-  transition-timing-function: cubic-bezier(0,5,1,6,0,4,0,7);
+  transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
 }
 
 .btn6 {
@@ -520,5 +520,5 @@ button {
   z-index: -1;
   transition: 0.5s;
   transform-origin: 0.5 0;
-  transition-timing-function: cubic-bezier(0,5,1,6,0,4,0,7);
+  transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
 }
