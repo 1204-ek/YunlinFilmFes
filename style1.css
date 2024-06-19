@@ -13,7 +13,7 @@
   justify-content: center;
   text-align: center;
   background:linear-gradient(#000, #342d18);
-  font-family: 'Zen Old Mincho Black',serif;
+  font-family: "Zen Old Mincho", serif;
   font-weight: 900;
   letter-spacing: 0.15em;
   font-style: normal;
@@ -89,7 +89,7 @@
 }
 
 .nav-link{
-  font-family: 'Noto Serif TC',sans-serif;
+  font-family: "Noto Serif TC", serif;
   padding: 10px 10px;
   color: whitesmoke;
   cursor: pointer;
@@ -131,7 +131,7 @@ body {
 .badge{
   font-size: 2.5em;
   letter-spacing: 3px;
-  font-family: 'Zen Old Mincho',serif;
+  font-family: "Zen Old Mincho", serif;
   font-weight: 500;
   font-style: normal;
   color: #ceb671;
@@ -261,7 +261,7 @@ color: transparent;
 }
 
 h1{
-  font-family: 'Zen Old Mincho',serif;
+  font-family: "Zen Old Mincho", serif;
   font-weight: 700;
   font-style: normal;
   color: #ceb671;
@@ -269,7 +269,7 @@ h1{
 }
 
 h6{
-  font-family: 'GenRyuMin JP',sans-serif;
+  font-family: "Noto Serif TC", serif;
   font-weight: 200;
   letter-spacing: 2px;
   font-style: normal;
@@ -277,7 +277,7 @@ h6{
 }
 
 h4{
-  font-family: 'GenRyuMin JP',sans-serif;
+  font-family: "Noto Serif TC", serif;
   font-weight: 400;
   letter-spacing: 0.15em;
   font-style: normal;
@@ -285,7 +285,7 @@ h4{
 }
 
 h3{
-  font-family: 'Noto Serif TC',sans-serif;
+  font-family: "Noto Serif TC", serif;
   font-weight: 400;
   letter-spacing: 0.15em;
   font-style: bold;
@@ -293,7 +293,7 @@ h3{
 }
 
 h5{
-  font-family: 'Zen Old Mincho',serif;
+  font-family: "Zen Old Mincho", serif;
   font-weight: 400;
   letter-spacing: 0.15em;
   font-style: normal;
@@ -318,7 +318,7 @@ button {
 }
 
 .introbtn{
-  font-family: 'Zen Old Mincho',serif;
+  font-family: "Zen Old Mincho", serif;
   font-weight: 700;
   font-style: normal;
   color: #ceb671;
@@ -339,7 +339,7 @@ button {
 }
 
 .introbtn2{
-  font-family: 'Zen Old Mincho',serif;
+  font-family: "Zen Old Mincho", serif;
   font-weight: 700;
   font-style: normal;
   color: #ceb671;
@@ -405,7 +405,7 @@ button {
   background-color: transparent;
   border: none;
   color: whitesmoke;
-  font-family: 'Noto Serif TC',sans-serif;
+  font-family: "Noto Serif TC", serif;
   text-align: center;
   letter-spacing: .1em;
   padding: 10px 20px;
@@ -437,7 +437,7 @@ button {
   background-color: transparent;
   border: none;
   color: whitesmoke;
-  font-family: 'Noto Serif TC',sans-serif;
+  font-family: "Noto Serif TC", serif;
   text-align: center;
   letter-spacing: .1em;
   padding: 10px 20px;
@@ -466,7 +466,7 @@ button {
   background-color: transparent;
   border: none;
   color: whitesmoke;
-  font-family: 'Noto Serif TC',sans-serif;
+  font-family: "Noto Serif TC", serif;
   text-align: center;
   letter-spacing: .1em;
   padding: 10px 20px;
@@ -498,7 +498,7 @@ button {
   background-color: transparent;
   border: none;
   color: whitesmoke;
-  font-family: 'Noto Serif TC',sans-serif;
+  font-family: "Noto Serif TC", serif;
   text-align: center;
   padding: 10px 20px;
   cursor: pointer;
@@ -529,7 +529,7 @@ button {
   background-color: transparent;
   border: none;
   color: whitesmoke;
-  font-family: 'Noto Serif TC',sans-serif;
+  font-family: "Noto Serif TC", serif;
   text-align: center;
   padding: 10px 20px;
   cursor: pointer;
@@ -560,7 +560,7 @@ button {
   background-color: transparent;
   border: none;
   color: whitesmoke;
-  font-family: 'Noto Serif TC',sans-serif;
+  font-family: "Noto Serif TC", serif;
   text-align: center;
   padding: 10px 20px;
   cursor: pointer;
@@ -591,7 +591,7 @@ button {
   background-color: transparent;
   border: none;
   color: whitesmoke;
-  font-family: 'Noto Serif TC',sans-serif;
+  font-family: "Noto Serif TC", serif;
   text-align: center;
   padding: 10px 20px;
   cursor: pointer;
