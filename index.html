@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--頁籤icon-->
     <link rel="icon" href="img/PAGE_LOGO.ico">
     <title>雲林影展｜首頁</title>
     <link href="fonts" rel="stylesheet" />
     <style>
         @import url(fonts);
         @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;500;600;700;900&display=swap');
 
         .glitter {
             position: absolute;
@@ -20,7 +22,7 @@
             border-radius: 50%;
             pointer-events: none;
             opacity: 1;
-            animation: glitter 1s linear forwards; /* 延长动画时间 */
+            animation: glitter 1s linear forwards; /* 延長動畫時間 */
             mix-blend-mode: screen;
         }
 
@@ -30,7 +32,7 @@
                 opacity: 1;
             }
             100% {
-                transform: translateY(50px) scale(0.5); /* 模拟下落和缩小 */
+                transform: translateY(50px) scale(0.5); /* 模擬下落和縮小 */
                 opacity: 0;
             }
         }
@@ -44,7 +46,7 @@
 
 <body link="whitesmoke" alink="#ceb671" vlink="#ceb671" >
     <script>
-    // script.js
+    // Loading頁的js
     document.addEventListener("DOMContentLoaded", function() {
     // 模擬加載過程
     setTimeout(function() {
@@ -68,19 +70,22 @@
         <img src="img/LOGO2.svg" class="loading-animation">
     </div>
 
+    <!--背景圖-->
     <img src="img\BG.webp" alt="BG" class="background-image">
+
+    <!--金粉特效-->
     <script>
             document.addEventListener('mousemove', function(e) {
-            for (let i = 0; i < 30; i++) { // 每次创建5个粒子
+            for (let i = 0; i < 30; i++) { // 每次創建30個粒子
                 const glitter = document.createElement('div');
                 glitter.className = 'glitter';
-                // 随机偏移量
+                // 隨機偏移量
                 const offsetX = (Math.random() - 0.5) * 25;
                 const offsetY = (Math.random() - 0.5) * 25;
                 glitter.style.left = `${e.pageX + offsetX - 2.5}px`;
                 glitter.style.top = `${e.pageY + offsetY - 2.5}px`;
 
-                // 监听动画结束事件，确保粒子在动画结束后被移除
+                // 監聽動畫結束事件，確保粒子在動畫結束後被移除
                 glitter.addEventListener('animationend', () => {
                     glitter.remove();
                 });
@@ -90,6 +95,7 @@
         });
     </script>
 
+    <!--回到頂部按鈕-->
     <script>
     document.addEventListener("DOMContentLoaded", function() {
     var TopBtnButton = document.getElementById("top-btn");
@@ -226,8 +232,26 @@
         </div>
     </div>
 </div>
-<!--在xl以下顯示的影展介紹-->
-<div class="container d-flex d-block d-xl-none">
+<!--在lg-md顯示的影展介紹-->
+<div class="container d-none d-md-block d-xl-none">
+    <div class="row">
+        <div class="col text-start">
+            <h1 class="badge text-start text-wrap"><b>影展介紹</b></h1>
+            <br>
+            <br>
+            <h4 class="text-break text-start" style="color: whitesmoke;">
+                雲林影展旨在推動雲林在地動畫影視作品，並鼓勵各教育階段的師生共同參與。我們透過頒獎和展覽，發掘並展示更多在地的創意資源。
+            </h4>
+
+            <h4 class="text-break text-start" style="color: whitesmoke;">
+                <br>
+                誠摯邀請您加入我們的行列，讓雲林成為台灣的動畫影視創意中心。
+            </h4>
+        </div>
+    </div>
+</div>
+<!--在sm以下顯示的影展介紹-->
+<div class="container d-flex d-block d-md-none">
     <div class="row">
         <div class="col text-start">
             <h1 class="badge text-start text-wrap"><b>影展介紹</b></h1>
