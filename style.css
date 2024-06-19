@@ -1,4 +1,6 @@
 @import url('fonts');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;500;600;700;900&display=swap');
 
 .loader{
   position: fixed;
@@ -89,7 +91,7 @@
 
 
 .nav-link{
-  font-family: 'Noto Serif TC',sans-serif;
+  font-family: "Noto Serif TC", serif;
   padding: 10px 10px;
   color: whitesmoke;
   cursor: pointer;
@@ -116,7 +118,7 @@ h1{
 
 
 h6{
-  font-family: 'GenRyuMin JP',sans-serif;
+  font-family: "Noto Serif TC", serif;
   font-weight: 200;
   letter-spacing: 2px;
   font-style: normal;
@@ -124,7 +126,7 @@ h6{
 }
 
 h4{
-  font-family: 'GenRyuMin JP',sans-serif;
+  font-family: "Noto Serif TC", serif;
   font-weight: 400;
   letter-spacing: 0.15em;
   font-style: normal;
